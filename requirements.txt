@@ -12,11 +12,11 @@ Flask-Bcrypt
 Flask-Migrate
 Flask-SQLAlchemy
 Flask-Testing
-gpg
+# gpg==1.10.0
 gunicorn
 itsdangerous
 Jinja2
-libcomps
+# libcomps==0.1.15.post1
 Mako
 MarkupSafe
 Paste
@@ -28,7 +28,7 @@ pyOpenSSL
 python-dateutil
 python-editor
 pytz
-rpm
+# rpm
 six
 SQLAlchemy
 Tempita
