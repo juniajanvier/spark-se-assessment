@@ -38,6 +38,14 @@ migrate = Migrate(app, db)
 def root_site():
     return "<p>It works!</p>"
 
+@app.route('/users/index')
+def users():
+    userInfo = {}
+    allUsers = User.query.all()
+    for user in allUsers:
+        userInfo[user.email] = [user.password]
+    return userInfo
+
 from project.server.auth.views import auth_blueprint
 app.register_blueprint(auth_blueprint)
 
